@@ -1,7 +1,5 @@
-import React from 'react';
-
-const PropertyPage = () => {
-  return <div>PropertyPage</div>;
+const PropertyPage = ({ params }) => {
+  return <div>Property Page {params.id}</div>;
 };
 
 export default PropertyPage;
