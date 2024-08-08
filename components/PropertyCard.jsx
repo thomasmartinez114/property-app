@@ -30,15 +30,15 @@ const PropertyCard = ({ property }) => {
 
         <div className='flex justify-center gap-4 text-gray-500 mb-4'>
           <p>
-            <i className='fa-solid fa-bed'></i> {property.beds}{' '}
+            <FaBed className='md:hidden lg:inline' /> {property.beds}{' '}
             <span className='md:hidden lg:inline'>Beds</span>
           </p>
           <p>
-            <i className='fa-solid fa-bath'></i> {property.baths}{' '}
-            <span className='md:hidden lg:inline'>Baths</span>
+            <FaBath className='md:hidden lg:inline' />
+            {property.baths} <span className='md:hidden lg:inline'>Baths</span>
           </p>
           <p>
-            <i className='fa-solid fa-ruler-combined'></i>
+            <FaRulerCombined className='md:hidden lg:inline' />
             {property.square_feet}{' '}
             <span className='md:hidden lg:inline'>sqft</span>
           </p>
@@ -46,10 +46,10 @@ const PropertyCard = ({ property }) => {
 
         <div className='flex justify-center gap-4 text-green-900 text-sm mb-4'>
           <p>
-            <i className='fa-solid fa-money-bill'></i> Weekly
+            <FaMoneyBill className='md:hidden lg:inline' /> Weekly
           </p>
           <p>
-            <i className='fa-solid fa-money-bill'></i> Monthly
+            <FaMoneyBill className='md:hidden lg:inline' /> Monthly
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const PropertyCard = ({ property }) => {
 
         <div className='flex flex-col lg:flex-row justify-between mb-4'>
           <div className='flex align-middle gap-2 mb-4 lg:mb-0'>
-            <i className='fa-solid fa-location-dot text-lg text-orange-700'></i>
+            <FaMapMarker className='text-orange-700 mt-1' />
             <span className='text-orange-700'>
               {' '}
               {property.location.city}
