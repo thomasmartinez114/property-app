@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 
 let connected = false;
-// let connected = false;
 
 const connectDB = async () => {
   mongoose.startSession('strictQuery', true);
@@ -22,3 +21,4 @@ const connectDB = async () => {
 };
 
 export default connectDB;
+
