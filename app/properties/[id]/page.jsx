@@ -15,7 +15,7 @@ const PropertyPage = async ({ params }) => {
         <div className='container m-auto py-6 px-6'>
           <Link
             href='/properties'
-            className='text-blue-500 hover:text-blue-600 flex items-center'
+            className='text-blue-800 hover:text-blue-600 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Return to Properties
           </Link>
