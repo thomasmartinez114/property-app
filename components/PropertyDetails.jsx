@@ -1,12 +1,17 @@
+import { FaTimes } from 'react-icons/fa';
+
 const PropertyDetails = ({ property }) => {
   return (
     <main>
       <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
-        <div className='text-gray-500 mb-4'>Apartment</div>
-        <h1 className='text-3xl font-bold mb-4'>Boston Commons Retreat</h1>
+        <div className='text-gray-500 mb-4'>{property.type}</div>
+        <h1 className='text-3xl font-bold mb-4'>{property.name}</h1>
         <div className='text-gray-500 mb-4 flex align-middle justify-center md:justify-start'>
           <i className='fa-solid fa-location-dot text-lg text-orange-700 mr-2'></i>
-          <p className='text-orange-700'>120 Tremont Street Boston, MA 02111</p>
+          <p className='text-orange-700'>
+            {property.location.street}, {property.location.city}{' '}
+            {property.location.zipcode}
+          </p>
         </div>
 
         <h3 className='text-lg font-bold my-6 bg-gray-800 text-white p-2'>
@@ -15,8 +20,12 @@ const PropertyDetails = ({ property }) => {
         <div className='flex flex-col md:flex-row justify-around'>
           <div className='flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0'>
             <div className='text-gray-500 mr-2 font-bold'>Nightly</div>
-            <div className='text-2xl font-bold'>
-              <i className='fa fa-xmark text-red-700'></i>
+            <div className='text-2xl font-bold text-blue-500'>
+              {property.rates.nightly ? (
+                `$${property.rates.nightly.toLocaleString()}`
+              ) : (
+                <FaTimes className='text-red-700' />
+              )}
             </div>
           </div>
           <div className='flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0'>
