@@ -34,7 +34,7 @@ const PropertyDetails = ({ property }) => {
               {property.rates.weekly ? (
                 `$${property.rates.weekly.toLocaleString()}`
               ) : (
-                <FaTimes className='text-red-700' />
+                <FaTimes className='text-red-600' />
               )}
             </div>
           </div>
