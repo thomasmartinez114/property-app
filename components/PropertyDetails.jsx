@@ -10,7 +10,7 @@ const PropertyDetails = ({ property }) => {
           <i className='fa-solid fa-location-dot text-lg text-orange-700 mr-2'></i>
           <p className='text-orange-700'>
             {property.location.street}, {property.location.city},{' '}
-            {property.location.zipcode}
+            {property.location.zipcode}.
           </p>
         </div>
 
