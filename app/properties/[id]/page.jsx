@@ -19,6 +19,7 @@ const PropertyPage = async ({ params }) => {
             className='text-blue-800 hover:text-blue-600 flex items-center'
           >
             <FaArrowLeft className='mr-2' /> Return to All Properties.
+          </Link>
         </div>
       </section>
       <section class='bg-blue-50'>
