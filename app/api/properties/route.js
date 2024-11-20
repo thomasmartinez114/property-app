@@ -14,5 +14,3 @@ export const GET = async () => {
     return new Response('Something went wrong', { status: 500 });
   }
 };
-
-
