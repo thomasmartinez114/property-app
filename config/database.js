@@ -11,7 +11,7 @@ const connectDB = async () => {
     return;
   }
 
-  // Connect to MongoDB..
+  // Connect to MongoDB...
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     connected = true;
