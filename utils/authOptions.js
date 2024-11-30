@@ -26,7 +26,7 @@ export const authOptions = {
     async session({ session }) {
       // 1. Get user from database
       // 2. Assign user id from the session
-      // 3. Return the session
+      // 3. Return the session.
     },
   },
 };
