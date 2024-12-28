@@ -7,7 +7,6 @@ async function addProperty(formData) {
     .getAll('images')
     .filter(image => image.description !== '')
     .map(image => image.name);
-  // console.log(images);
 
   const propertyData = {
     type: formData.get('type'),
