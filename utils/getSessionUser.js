@@ -12,5 +12,6 @@ export const getSessionUser = async () => {
   return {
     user: session.user,
     userId: session.user.id,
+    // add more objects here
   };
 };
