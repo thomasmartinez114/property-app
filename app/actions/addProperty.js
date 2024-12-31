@@ -1,7 +1,7 @@
 'use server';
 
 async function addProperty(formData) {
-  // Access all values from amenities and images.
+  // Access all values from amenities and images
   const amenities = formData.getAll('amenities');
   const images = formData
     .getAll('images')
